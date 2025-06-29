@@ -1,0 +1,57 @@
+# ======================
+# Docker .gitignore
+# ======================
+
+# Docker volumes data
+volumes/
+data/
+mysql-data/
+postgres-data/
+redis-data/
+
+# Docker override files (for local development)
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+
+# Docker build context files that shouldn't be included
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Backup files
+*.backup
+*.bak
+
+# Docker images export (if you export images locally)
+*.tar
+*.tar.gz
+
+# Docker build cache
+.buildx-cache/
+
+# Secrets and certificates
+secrets/
+certs/
+*.pem
+*.key
+*.crt
+
+# Local development scripts
+scripts/local/
+
+# Temporary files
+tmp/
+temp/
